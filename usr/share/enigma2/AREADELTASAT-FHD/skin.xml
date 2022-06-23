@@ -465,19 +465,19 @@
   <widget source="session.CurrentService" render="Label" position="467,880" size="660,35" zPosition="2" font="PG;24" halign="center" noWrap="1" backgroundColor="background_tux" valign="center" foregroundColor="green" transparent="1">
     <convert type="ServiceName">%n. %N</convert>
   </widget>
-  <eLabel text="SNR:" zPosition="3" position="1472,990" size="50,24" halign="right" font="Regular;18" foregroundColor="white" transparent="1" backgroundColor="transpBlack" />
-  <widget source="session.FrontendStatus" render="Label" position="1841,990" zPosition="3" size="66,24" halign="center" font="Regular;18" transparent="1" backgroundColor="transpBlack" valign="bottom" foregroundColor="grey">
-    <convert type="FrontendInfo">SNR</convert>
+  <eLabel text="AGC:" zPosition="3" position="1472,990" size="50,24" halign="right" font="Regular;18" foregroundColor="white" transparent="1" backgroundColor="transpBlack" />
+  <widget source="session.FrontendStatus" render="Label" position="1840,990" zPosition="3" size="66,24" halign="center" font="Regular;18" transparent="1" backgroundColor="transpBlack" valign="bottom" foregroundColor="grey">
+    <convert type="FrontendInfo">AGC</convert>
   </widget>
   <widget source="session.FrontendStatus" render="Progress" position="1526,996" size="310,8" zPosition="4" pixmap="infobar/bar_snr.png" transparent="1">
+    <convert type="FrontendInfo">AGC</convert>
+  </widget>
+  <eLabel text="SNR:" zPosition="3" position="1472,962" size="50,24" halign="center" font="Regular;18" foregroundColor="white" transparent="1" backgroundColor="transpBlack" />
+  <widget source="session.FrontendStatus" render="Label" position="1840,962" zPosition="3" size="66,24" halign="center" font="Regular;18" transparent="1" backgroundColor="transpBlack" valign="bottom" foregroundColor="white">
     <convert type="FrontendInfo">SNR</convert>
   </widget>
-  <eLabel text="AGC:" zPosition="3" position="1472,962" size="50,24" halign="center" font="Regular;18" foregroundColor="white" transparent="1" backgroundColor="transpBlack" />
-  <widget source="session.FrontendStatus" render="Label" position="1840,962" zPosition="3" size="66,24" halign="center" font="Regular;18" transparent="1" backgroundColor="transpBlack" valign="bottom" foregroundColor="white">
-    <convert type="FrontendInfo">AGC</convert>
-  </widget>
   <widget source="session.FrontendStatus" render="Progress" position="1526,970" size="310,8" zPosition="4" pixmap="infobar/bar_agc.png" transparent="1">
-    <convert type="FrontendInfo">AGC</convert>
+    <convert type="FrontendInfo">SNR</convert>
   </widget>
   <eLabel name="new eLabel" position="394,965" size="803,6" backgroundColor="background_tux" />
   <widget source="session.Event_Now" render="Progress" pixmap="infobar/progress.png" position="394,967" size="803,6" zPosition="2" transparent="1">
@@ -517,7 +517,7 @@
     <convert type="ConditionalShowHide" />
   </widget>
   <!-- Date Time  -->
-  <widget source="global.CurrentTime" render="Label" position="1340,20" size="550,30" font="PG;25" foregroundColor="white" backgroundColor="background_tux" transparent="1" halign="center" zPosition="1">
+  <widget source="global.CurrentTime" render="Label" position="1320,20" size="574,30" font="PG;25" foregroundColor="white" backgroundColor="background_tux" transparent="1" halign="center" zPosition="1">
     <convert type="ClockToText">Format: %A, %d.%m.%Y  %H:%M:%S</convert>
   </widget>
   <!--  -->
@@ -770,7 +770,7 @@
     <convert type="MSNWeather">winddisplay</convert>
   </widget>
   <!-- Date Time -->
-  <widget source="global.CurrentTime" render="Label" position="1340,20" size="550,30" font="PG;25" foregroundColor="white" backgroundColor="background_tux" transparent="1" halign="center" zPosition="1">
+  <widget source="global.CurrentTime" render="Label" position="1320,20" size="574,30" font="PG;25" foregroundColor="white" backgroundColor="background_tux" transparent="1" halign="center" zPosition="1">
     <convert type="ClockToText">Format: %A, %d.%m.%Y  %H:%M:%S</convert>
   </widget>
   <!-- Line -->
