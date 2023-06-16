@@ -8,6 +8,7 @@
 	<output id="0"> 
 		<resolution bpp="32" xres="1920" yres="1080"/>
 	</output>
+	
 	<fonts>
 		<font name="Regular" filename="LiberationSans-Regular.ttf" scale="100"/>
 		<font name="LCD" filename="lcd.ttf" scale="100"/>
@@ -16,6 +17,7 @@
 		<font name="DejaVuSans" filename="DejaVuSans.ttf" scale="100"/>
 		<font name="error" filename="error.ttf" scale="100"/>
 		<font name="Regular" filename="tiny.ttf" scale="94" />
+		<font name="Regular" filename="nmsbd.ttf" scale="100"/>		
         <font name="Menu" filename="nmsbd.ttf" scale="100" />
         <font name="PG" filename="venus.ttf" scale="100" />		
 		<alias name="ChoiceList" font="Regular" size="28" height="38"/>
@@ -107,6 +109,7 @@
 		<parameter name="FcFileListMultiLock" value="2,0,30,30"/>
 		<parameter name="FcFileListMultiName" value="90,3,1000,32"/>
 		<parameter name="FcFileListName" value="68,4,1000,34"/>
+	    <parameter name="AboutHddSplit" value="1"/>
 	</parameters>
 	<switchpixmap>
 		<pixmap name="menu_on" filename="icons/menu_on.png"/>
