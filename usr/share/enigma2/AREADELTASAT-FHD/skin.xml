@@ -130,7 +130,7 @@
 		<color name="Background" color="background"/>
 		<color name="LabelForeground" color="foreground"/>
 		<color name="ListboxBackground" color="background"/>
-		<color name="ListboxForeground" color="foreground"/>
+		<color name="ListboxForeground" color="yellow"/>
 		<color name="ListboxSelectedBackground" color="selectorcolor"/>
 		<color name="ListboxSelectedForeground" color="selectedFG"/>
 		<color name="ListboxMarkedBackground" color="un40a0aa0"/>
